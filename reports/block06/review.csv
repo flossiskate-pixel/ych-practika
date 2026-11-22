@@ -1,1 +1,4 @@
-request,reviewer,commit,file_line,finding,author_response,recheck,decision
+MR,Автор,Рецензент,Замечание,Ответ,Решение
+#1,flossiskate,Student2,Опечатка в README,Исправлено,Принято
+#2,flossiskate,Student2,Неверная логика поиска,Исправлено,Принято
+
