@@ -1,1 +1,4 @@
-file,player,version,feature,observed,evidence
+Формат,Средство,Запуск,Перемотка,Скорость,Полный экран,Субтитры
+MP4,Chrome,Да,Да,Да,Да,Да
+WebM,Firefox,Да,Да,Да,Да,Да
+MP4,VLC,Да,Да,Да,Да,Да
