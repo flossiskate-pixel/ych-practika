@@ -9,12 +9,13 @@ def load_catalog():
     return json.loads(DATA_PATH.read_text(encoding="utf-8"))
 
 def search_items(items, query):
-    return [item for item in items if query in item["title"]]
+    q = query.strip().lower()
+    return [item for item in items if q in item["title"].lower()]
 
 def filter_by_category(items, category):
     if not category:
         return list(items)
-    return [item for item in items if item["category"] != category]
+    return [item for item in items if item["category"] == category]
 
 def total_duration(items):
     total = 0
@@ -26,8 +27,8 @@ def validate_item(item):
     errors = []
     if not item.get("title", "").strip():
         errors.append("Не указано название")
-    if item.get("duration", 0) == 0:
-        errors.append("Длительность должна быть положительной")
+    if item.get("duration", 0) < 0:
+        errors.append("Длительность не может быть отрицательной")
     return errors
 
 def duration_label(seconds):
