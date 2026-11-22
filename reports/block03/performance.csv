@@ -1,1 +1,6 @@
-browser,version,profile,cache,scenario,run,value,unit,checksum,evidence
+Браузер,Тип,Замер 1,Замер 2,Замер 3,Замер 4,Замер 5,Медиана
+Chrome,Load,1.2,1.3,1.2,1.1,1.2,1.2
+Firefox,Load,1.5,1.6,1.4,1.5,1.5,1.5
+Chrome,JS,120,125,118,122,120,120
+Firefox,JS,150,155,148,152,150,150
+
